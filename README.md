@@ -9,3 +9,4 @@ All the things are developed within todays technology.
 ## How to Contribute
 All of them are asked to COntribute the things.
 ## CopyRight
+All rights are everythoing with us 
