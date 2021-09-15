@@ -7,3 +7,5 @@ Here is the Purpose
 ## Deployment
 
 ## How to Contribute
+
+## CopyRight
