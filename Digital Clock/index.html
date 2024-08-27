@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hero">
+    <div class="dateItem">
+        <span id="date">00</span>
+        <span>:</span>
+        <span id="month">00</span>
+        <span>:</span>
+        <span id="year">00</span>
+    </div>
+    <div class="container">
+        <div class="clock">
+            <span id="hrs">00</span>
+            <span>:</span>
+            <span id="min">00</span>
+            <span>:</span>
+            <span id="sec">00</span>
+        </div>
+    </div>
+</div>
+<script>
+    let hrs=document.getElementById("hrs");
+    let mins=document.getElementById("min");
+    let sec=document.getElementById("sec");
+    let date=document.getElementById("date")
+    let month=document.getElementById("month");
+    let year=document.getElementById("year");
+    setInterval(()=>{
+    let currentTime=new Date();
+    hrs.innerHTML= (currentTime.getHours()<10?"0":"")+currentTime.getHours();
+    mins.innerHTML=(currentTime.getMinutes()<10?"0":"")+currentTime.getMinutes();
+    sec.innerHTML=(currentTime.getSeconds()<10?"0":"")+currentTime.getSeconds();
+    },1000)
+</script>
+</body>
+</html>
